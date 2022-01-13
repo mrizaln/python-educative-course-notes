@@ -1,0 +1,10 @@
+# There are three main class relationships
+
+# the IS A relationship is already covered in the inheritance chpater, the other two are:
+    # 1 Part-of: an onstante of the component class can only be created inside the main class
+    # 2 Has-a  : if one or both need the other's object to perform an operation (independent)
+
+# Assiciation
+    # association is the common term for both the has-a and part-of relationships
+    # specialized forms of association: aggregation         Has-a
+    #                                   composition         Part-of
