@@ -1,2 +1,2 @@
 # python-educative-course-notes
-Collection of notes I gather when taking python course on [educative](https://www.educative.io)
+Collection of notes I gather when I took Python course on [educative](https://www.educative.io)
