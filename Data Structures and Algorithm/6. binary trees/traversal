@@ -1,0 +1,92 @@
+# pseudo code
+# pre-order traversal of binary tree
+
+                 A
+               /   \
+              B     G
+             / \      \
+            C   D      H
+               / \    /
+              E   F  I
+
+
+function fun(x, string){
+    traversal += string
+    traversal = fun(x.kiri)
+    traversal = fun(x.kanan)
+}
+
+fun(A, ""):
+    traversal = '' + A
+    traversal = {
+        fun(B, "A"):
+            traversal = '' + A + B
+            traversal = {
+                fun(C, "AB"):
+                    traversal = '' + A + B + C
+                    traversal = {
+                        fun(None, "ABC"):
+                            return
+                    }
+                    traversal = {
+                        fun(None, "ABC"):
+                            return
+                    }
+            }
+            traversal = {
+                fun(D, "ABC"):
+                    traversal = '' + A + B + C + D
+                    traversal = {
+                        fun(E, "ABCD"):
+                            traversal = '' + A + B + C + D + E
+                            traversal = {
+                                fun(None, "ABCDE"):
+                                    return
+                            }
+                            traversal = {
+                                fun(None, "ABCDE"):
+                                    return
+                            }
+                    }
+                    traversal = {
+                        fun(F, "ABCDE"):
+                            traversal = '' + A + B + C + D + E + F
+                            traversal = {
+                                fun(None, "ABCDE"):
+                                    return
+                            }
+                            traversal = {
+                                fun(None, "ABCDE"):
+                                    return
+                            }
+                    }
+            }
+    }
+    traversal = {
+        fun(G, "ABCDEF"):
+            traversal = '' + A + B + C + D + E + F + G
+            traversal = {
+                fun(None, "ABCDEFG"):
+                    return
+            }
+            traversal = {
+                fun(H, "ABCDEFG"):
+                    traversal = '' + A + B + C + D + E + F + G + H
+                    traversal = {
+                        fun(None, "ABCDEFGH"):
+                            return
+                    }
+                    traversal = {
+                        fun(I, "ABCDEFGH"):
+                            traversal = '' + A + B + C + D + E + F + G + H + I
+                            traversal = {
+                                fun(None, "ABCDEFGHI"):
+                                    return
+                            }
+                            traversal = {
+                                fun(None, "ABCDEFGHI"):
+                                    return
+                            }
+                    }
+            }
+    }
